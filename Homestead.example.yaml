@@ -1,0 +1,27 @@
+ip: 192.168.10.10
+memory: 2048
+cpus: 2
+provider: virtualbox
+folders:
+    -
+        map: 'C:\Users\Leon\symfony-projects\paper-hands-v2'
+        to: /home/vagrant/code
+sites:
+    -
+        map: homestead.test
+        to: /home/vagrant/code/public
+databases:
+    - homestead
+features:
+    -
+        mysql: true
+    -
+        mariadb: false
+    -
+        postgresql: false
+    -
+        ohmyzsh: false
+    -
+        webdriver: false
+name: paper-hands-v2
+hostname: paper-hands-v2
